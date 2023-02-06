@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(225, 100%, 94%);
-    background-image: url("../images/pattern-background-desktop.svg"), url("pasta/Imagem2.jpg");
+    background-image: url("/images/pattern-background-desktop.svg"), url("pasta/Imagem2.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
