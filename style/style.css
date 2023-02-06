@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.background {
+    display: block;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("/images/pattern-background-desktop.svg"), url("pasta/Imagem2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 28.1rem;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0px 20px 30px hsla(245, 75%, 52%, 0.169);
+}
+
+.hero {
+    border-radius: 20px 20px 0 0;
+}
+
+.description {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3rem 3rem;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 0.01rem;
+    color: hsl(223, 47%, 23%);
+    cursor: default;
+}
+
+p {
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    cursor: default;
+}
+
+.desaturated {
+    color: hsl(224, 23%, 55%);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 1.6rem 1.5rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    
+}
+
+.visual-information {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: default;
+}
+
+.stronger {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    margin-bottom: 0.7rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0px 15px 20px hsla(245, 75%, 52%, 0.31);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+@media (max-width: 520px) {
+
+    main {
+        min-width: 21.1rem;
+    }
+    
+    .options {
+        padding: 1.5rem 1.5rem 1.6rem 1rem;
+    }
+
+}
